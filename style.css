@@ -68,16 +68,16 @@ body{
 }
 
 .cases > div{
-    border: lightblue 1px solid;
+    border: lightblue 0px solid;
 }
 
 
 .wrapper-11 > div {
-    border: lightgreen 1px solid;
+    border: lightgreen 0px solid;
 }
 
 .wrapper-8 > div {
-    border: lightcoral 1px solid;
+    border: lightcoral 0px solid;
 }
 
 
