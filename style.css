@@ -2,8 +2,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
-
 html{
     scroll-behavior: smooth;
     overflow: -moz-scrollbars-none;
@@ -49,8 +49,13 @@ body{
 .me{
     width: calc(100% /11 * 2);
     position: absolute;
-    right: 0;
+    right: calc(100% /11 *-1);
     top: 0;
+    transition: all 0.3s ease-out;
+}
+
+.me:hover{
+    right: 0;
 }
 
 .blocks{
@@ -163,10 +168,10 @@ figure {
     width: 100%;
     padding: 0;
     margin: 0;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 
 }
 
@@ -205,17 +210,20 @@ h1{
     font-family: 'Okta Neue SemiBold';
     font-size: 2rem;
     color:  #010201;
-    transition: color 0.2s, 0.3s ease;
+    transition: color 0.1 ease;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
 }
 
+a > h1:hover{
+    color: #FF0000;
+}
 
 p{
     font-family: 'Okta Neue Ultralight';
     font-size: 2rem;
     color:  #010201;
-    transition: color 0.2s, 0.3s ease;
+    transition: color 0.1 ease;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
 }
@@ -228,7 +236,7 @@ a{
     font-family: 'Okta Neue Ultralight';
     font-size: 2rem;
     color:  #010201;
-    transition: color 0.2s, 0.3s ease;
+    transition: color 0.1 ease;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     text-decoration: underline;
