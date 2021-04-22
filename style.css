@@ -67,14 +67,31 @@ body{
     margin-top: 10rem;
 }
 
+.slideshow{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.slide{
+    display:none;
+}
 
 
 .casename{
     display: grid;
-    grid-template-columns: 8fr;
+    grid-template-columns: 7fr;
     grid-gap: 1rem;
     margin-top: 10rem;
     margin-bottom: 4rem;
+
+}
+
+.slideshow > div {
+    border: #101011 0px solid;
+}
+
+.casename > div {
+    border: lightblue 0px solid;
 }
 
 .cases > div{
@@ -227,6 +244,7 @@ a:hover{
     background-color: #101011;
     height: 20rem;
     align-items: center;
+   
 }
 
 .footer a{
@@ -278,7 +296,30 @@ a:hover{
 
 
 
-
-a > img:hover{
+.preview > img:hover{
     filter: invert();
 }
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.arrow {
+    background: none;
+    border: 0;
+    color: inherit;
+    line-height: normal;
+    overflow: visible;
+    height: 100%;
+    font-family: 'Okta Neue SemiBold';
+    color: #FF0000;
+    font-size: 5rem;
+}
+
+.ar-right{
+    padding-left: 13rem;
+}
+
+.ar-left{
+    padding-right: 13rem;
+}
+
