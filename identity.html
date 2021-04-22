@@ -10,29 +10,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="assets/katacult/favicon.png">
 
+
 </head>
 
 
 <body>
     <div class="wrapper-8">
 
-        <div ></div>
-        <div >
+        <div></div>
+        <div>
             <h1>Identity</h1>
         </div>
-        <div >
+        <div>
             <h1>Advertising</h1>
         </div>
-        <div >
+        <div>
             <h1>WEB</h1>
         </div>
-        <div >
+        <div>
             <h1>Poster</h1>
         </div>
-        <div >
+        <div>
             <h1>Infographics</h1>
         </div>
-        <div ></div>
+        <div></div>
         <div class="reverse">
             <h1 class="text-red">Hire</h1>
         </div>
@@ -41,41 +42,48 @@
             <div class="cases">
                 <div>
                     <figure>
-                        <a id="myBtn">
+                        <div onclick="showModal(this);">
                             <img src="assets/images/previews/kontrabass.jpg" alt="preview">
-                            <div id="myModal" class="modal">
+                            <div class="modal" onclick="hideModal(this)">
                                 <div class="modal-content">
-                        
+
                                     <div w3-include-html="kontrabass.html"></div>
                                 </div>
                             </div>
-                        </a>
-                            <figcaption>
-                                <h1>kontrabass</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum beatae
-                                    veritatis odit
-                                    minimm numquam! Ea distinctio ex ipsa iusto corrupti officiis laudantium, amet
-                                    illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
-                                    atque,
-                                    iste
-                                    dolores harum quibusdam?</p>
-                            </figcaption>
-                        
+                        </div> 
+                        <figcaption>
+                            <h1>kontrabass</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum beatae
+                                veritatis odit
+                                minimm numquam! Ea distinctio ex ipsa iusto corrupti officiis laudantium, amet
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
+                                iste
+                                dolores harum quibusdam?</p>
+                        </figcaption>
+
                     </figure>
                 </div>
 
                 <div></div>
+
                 <div>
                     <figure>
-                        <img src="assets/images/previews/foc.jpg" alt="preview">
+                        <div onclick="showModal(this);">
+                            <img src="assets/images/previews/foc.jpg" alt="preview">
+                            <div class="modal" onclick="hideModal(this)">
+                                <div class="modal-content">
+                                    <div w3-include-html="foc.html"></div>
+                                </div>
+                            </div>
+                        </div>
                         <figcaption>
                             <h1>Fundumanetals of Composition</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum beatae
                                 veritatis odit
-                                minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
-                                necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
-                                laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                minimm numquam! Ea distinctio ex ipsa iusto corrupti officiis laudantium, amet
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -304,20 +312,32 @@
 
     <script>
 
+
+        function showModal(event) {
+            event.querySelector('.modal').style.display = "block";
+        }
+
         // Get the modal
         var modal = document.getElementById("myModal");
+
 
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+
+        // function hideModal (event) {
+        //     console.log(event.classList);
+        //     if(event.classList[0] == 'modal') {
+        //         alert("Hello! I am an alert box!!");
+        //         event.querySelector('.modal').style.display = "none";
+        //     }
+            
+        // }
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function () {
+       /* btn.onclick = function () {
             modal.style.display = "block";
-        }
-
+        }*/
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
@@ -325,8 +345,8 @@
                 modal.style.display = "none";
             }
         }
+
+
     </script>
-
-
 
 </body>
