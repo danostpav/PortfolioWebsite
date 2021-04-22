@@ -67,6 +67,16 @@ body{
     margin-top: 10rem;
 }
 
+
+
+.casename{
+    display: grid;
+    grid-template-columns: 8fr;
+    grid-gap: 1rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
 .cases > div{
     border: lightblue 0px solid;
 }
@@ -159,8 +169,8 @@ img {
   }
 
 
-  .no-paddingtop{
-      padding-top: 0;
+  .no-margintop{
+      margin-top: 0;
   }
 
 
