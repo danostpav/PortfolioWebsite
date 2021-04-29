@@ -190,7 +190,7 @@ p{
     grid-gap: 5rem;
     margin-top: 1rem;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 15rem;
     padding-bottom: 35rem;
 }
 
@@ -441,7 +441,7 @@ a:hover{
 }
 
 .slideshow > div {
-    border: #101011 0px solid;
+    border: #010201 0px solid;
 }
 
 .casename > div {
@@ -539,7 +539,7 @@ img {
 
 .footer{
     margin-top: 25rem;
-    background-color: #101011;
+    background-color: #010201;
     height: 20rem;
     align-items: center;
    
