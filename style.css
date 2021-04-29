@@ -100,9 +100,15 @@ a{
 user-select: none; /* Standard */
     }
 
-.navigation a h1{
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation a > h1{
    font-size: 3.5rem;
    letter-spacing: 1px;
+   text-decoration: none;
 
 }
 
@@ -378,6 +384,9 @@ a:hover{
     color: #FF0000;
 }
 
+.navigation a{
+    text-decoration: none;
+}
 
 }
 /* } END */
