@@ -12,6 +12,11 @@
 
 <body>
 
+    <div class="preloader">
+        <div class="preloader__image"></div>
+      </div>
+    
+
     <div class="navigation">
         <div class="hide-m"></div>
         <div>
@@ -324,5 +329,15 @@
 
 
     </script>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 
 </body>
