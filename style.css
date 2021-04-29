@@ -45,10 +45,10 @@ body{
         
         }
 
-   .navigation a h1{
+   .a h1{
        font-size: 3.5rem;
        letter-spacing: 1px;
-       text-decoration: underline;
+       margin-block-start: 5rem;
    }
    
 
@@ -90,6 +90,7 @@ h1{
     transition: color 0.1 ease-in-out;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
+    letter-spacing: -1px;
     font-weight: bold;
 }
 
