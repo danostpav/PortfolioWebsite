@@ -17,23 +17,35 @@
 
         <div></div>
         <div>
-            <a href="identity.html" style="text-decoration: none;"><h1>Identity</h1></a>
+            <a href="identity.html" style="text-decoration: none;">
+                <h1>Identity</h1>
+            </a>
         </div>
         <div>
-            <a href="advertising.html" style="text-decoration: none;"><h1 style="text-decoration: underline;">Advertising</h1></a>
+            <a href="advertising.html" style="text-decoration: none;">
+                <h1  style="text-decoration: underline;">Advertising</h1>
+            </a>
         </div>
         <div>
-            <h1>WEB</h1>
+            <a href="web.html" style="text-decoration: none;">
+                <h1>WEB</h1>
+            </a>
         </div>
         <div>
-            <h1>Poster</h1>
+            <a href="poster.html" style="text-decoration: none;">
+                <h1>Poster</h1>
+            </a>
         </div>
         <div>
-            <h1>Infographics</h1>
+            <a href="infographics.html" style="text-decoration: none;">
+                <h1>Infographics</h1>
+            </a>
         </div>
         <div></div>
         <div class="reverse">
-            <h1 class="text-red">Hire</h1>
+            <a href="hire.html" style="text-decoration: none;">
+                <h1 class="text-red">Hire</h1>
+            </a>
         </div>
 
         <div class="blocks">
@@ -44,16 +56,21 @@
                     </h1>
                 </div>
             </div>
-            <div class="slideshow">
-                <div style="height: 100%; justify-self: start;"><button class="arrow ar-left"
-                        onclick="plusDivs(-1)">&#10094;</button></div>
+            <div class="slideshow" id="slide1">
+                <div class="arrow-container"><button class="arrow ar-left"
+                        onclick="plusDivs(this, -1)">&#10094;</button></div>
                 <div>
-                    <img class="slide" src="assets/images/previews/kontrabass.jpg" alt="preview">
-                    <img class="slide" src="assets/images/previews/foc.jpg" alt="preview">
-                    <img class="slide" src="assets/images/previews/boosters.jpg" alt="preview">
+                    <img class="slide" src="assets/advertising/r_d/1.jpg" alt="preview">
+                    <img class="slide" src="assets/advertising/r_d/2.jpg" alt="preview">
+                    <img class="slide" src="assets/advertising/r_d/3.jpg" alt="preview">
+                    <!-- <video controls width="100%"><source src="assets/cases/kontrabass/4.mp4" type="video/mp4"></video> -->
+                    <img class="slide" src="assets/advertising/r_d/6.jpg" alt="preview">
+                    <!-- <video controls width="100%"><source src="assets/cases/kontrabass/5.mp4" type="video/mp4"></video> -->
+                    <img class="slide" src="assets/advertising/r_d/7.png" alt="preview">
+                    <img class="slide" src="assets/advertising/r_d/8.jpg" alt="preview">
                 </div>
-                <div style="height: 100%; justify-self: end;"><button class="arrow ar-right"
-                        onclick="plusDivs(1)">&#10095;</button></div>
+                <div class="arrow-container"; style="height: 100%; justify-self: end;"><button class="arrow ar-right"
+                        onclick="plusDivs(this, 1)">&#10095;</button></div>
             </div>
         
 
@@ -67,16 +84,16 @@
                     </h1>
                 </div>
             </div>
-            <div class="slideshow">
+            <div class="slideshow" id="slide2">
                 <div style="height: 100%; justify-self: start;"><button class="arrow ar-left"
-                        onclick="plusDivs(-1)">&#10094;</button></div>
+                        onclick="plusDivs(this, -1)">&#10094;</button></div>
                 <div>
-                    <img class="slide" src="assets/images/previews/kontrabass.jpg" alt="preview">
-                    <img class="slide" src="assets/images/previews/foc.jpg" alt="preview">
+                    <img class="slide" src="assets/images/previews/intercity.jpg" alt="preview">
+                    <img class="slide" src="assets/images/previews/khoryv.jpg" alt="preview">
                     <img class="slide" src="assets/images/previews/boosters.jpg" alt="preview">
                 </div>
                 <div style="height: 100%; justify-self: end;"><button class="arrow ar-right"
-                        onclick="plusDivs(1)">&#10095;</button></div>
+                        onclick="plusDivs(this, 1)">&#10095;</button></div>
             </div>
 
 
@@ -96,7 +113,7 @@
                 <div>
                     <img class="slide" src="assets/images/previews/intercity.jpg" alt="preview">
                     <img class="slide" src="assets/images/previews/khoryv.jpg" alt="preview">
-                    <img class="slide" src="assets/images/previews/boosters.jpg" alt="preview">
+                    <img class="slide" src="assets/images/previews/ludineresurs.jpg" alt="preview">
                 </div>
                 <div style="height: 100%; justify-self: end;"><button class="arrow ar-right"
                         onclick="plusDivs(1)">&#10095;</button></div>
@@ -140,17 +157,20 @@
     </div>
 
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+       var slideIndex = 1;
+        showDivs(document.getElementById('slide1'), slideIndex);
+        showDivs(document.getElementById('slide2'), slideIndex);
+        showDivs(document.getElementById('slide3'), slideIndex);
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
+        function plusDivs(event, n) {
+            showDivs(event.parentElement.parentElement, slideIndex += n);
         }
 
 
-        function showDivs(n) {
+        function showDivs(event, n) {
             var i;
-            var x = document.getElementsByClassName("slide");
+            var x = event.querySelectorAll(".slide");
+            console.log(x);
             if (n > x.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
