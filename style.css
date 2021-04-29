@@ -38,15 +38,10 @@ body{
         text-orientation: mixed;
         writing-mode: vertical-lr;
         position: fixed;
-        top: 6rem;
-        left: 2rem;
+        
         height: 89vh;
-        margin-bottom: 1rem;
         transform: rotate(-180deg);
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
+ 
         }
 
    .navigation a h1{
