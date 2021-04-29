@@ -152,7 +152,6 @@ p{
     background-color: #F5F5F5;
     padding: 0;
     margin: auto;
-    border: 0px solid #888;
     width: 90%;
     
   }
@@ -376,7 +375,6 @@ p{
     background-color: #F5F5F5;
     margin: auto;
     padding: 0;
-    border: 0px solid #888;
     width: 80%;
   }
 
@@ -417,6 +415,7 @@ a:hover{
 .slideshow{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
+    border: none;
 }
 
 .posters{
@@ -578,7 +577,6 @@ input[type="reset"],
 input[type="button"],
 .arrow {
     background: none;
-    border: 0;
     line-height: normal;
     overflow: visible;
     height: 100%;
@@ -587,6 +585,7 @@ input[type="button"],
     font-size: 5rem;
     cursor: pointer;
     font-weight: bold;
+    border: none;
 }
 
 .ar-right-p{
