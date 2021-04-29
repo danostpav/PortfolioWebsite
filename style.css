@@ -31,28 +31,6 @@ body{
       
     }
 
-    .navigation{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        writing-mode: vertical-lr;
-        position: fixed;
-        top: 6rem;
-        left: 2rem;
-        height: 89vh;
-        margin-bottom: 1rem;
-        transform: rotate(-180deg);
-        
-        }
-
-   .a h1{
-       font-size: 3.5rem;
-       letter-spacing: 1px;
-       margin-block-start: 5rem;
-   }
-   
-
-
     .wrapper-8{
         width: 100%;
         display: grid;
@@ -97,7 +75,7 @@ h1{
 
 a{
     font-family: 'Okta Neue';
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:  #010201;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
@@ -105,9 +83,32 @@ a{
 }
 
 
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    writing-mode: vertical-lr;
+    position: fixed;
+    top: 6rem;
+    left: 2rem;
+    height: 89vh;
+    margin-bottom: 1rem;
+    transform: rotate(-180deg);
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+    }
+
+.navigation a h1{
+   font-size: 3.5rem;
+   letter-spacing: 1px;
+
+}
+
 p{
     font-family: 'Okta Neue';
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:  #010201;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
@@ -267,6 +268,10 @@ h1{
 
 a > h1:hover{
     color: #FF0000;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
 }
 
 a{
@@ -368,6 +373,11 @@ p{
     grid-auto-flow: row;
     margin-top: 10rem;
 }
+
+a:hover{
+    color: #FF0000;
+}
+
 
 }
 /* } END */
@@ -502,7 +512,7 @@ img {
     overflow: hidden;
     object-fit: contain;
     position: relative;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease-in-out;
     
 }
 
@@ -517,14 +527,6 @@ img {
   .novisible {
     display: none;
   }
-
-
-
-
-
-a:hover{
-    color: #FF0000;
-}
 
 
 .footer{
