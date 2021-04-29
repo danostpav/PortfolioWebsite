@@ -2,7 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 html{
     scroll-behavior: smooth;
