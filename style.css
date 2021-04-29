@@ -38,9 +38,10 @@ body{
         text-orientation: mixed;
         writing-mode: vertical-lr;
         position: fixed;
-        top: 2rem;
-        left: 2rem;
-        height: 86vh;
+        top: -3rem;
+        left: -3rem;
+        height: 89vh;
+        margin-bottom: 1rem;
         transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -93,6 +94,8 @@ h1{
     transition: color 0.1 ease-in-out;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
+    letter-spacing: -1px;
+    padding: 0.3rem;
 }
 
 
@@ -103,6 +106,7 @@ a{
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     text-decoration: underline;
+    padding: 0.3rem;
 }
 
 p{
@@ -111,6 +115,7 @@ p{
     color:  #010201;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
+    padding: 0.3rem;
 }
     
 
