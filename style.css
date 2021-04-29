@@ -34,14 +34,23 @@ body{
     .navigation{
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+
+        flex-direction: row-reverse;
+        text-orientation: mixed;
+        writing-mode: vertical-lr;
         position: fixed;
-        top: 5rem;
-        height: 40vh;
+        top: 2rem;
+        left: 2rem;
+        height: 90vh;
+        transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
         }
 
    .navigation a h1{
-       font-size: 1.8rem;
+       font-size: 3.5rem;
        
    }
 
@@ -59,16 +68,6 @@ body{
         display: none;
     }
     
-    
-    .cases{
-        display: grid;
-        grid-template-columns: 3fr 1fr 3fr;
-        grid-auto-rows: minmax(40rem, auto);
-        grid-gap: 1rem;
-
-    }
-
-    
     .hide-m{
         display: none;
     }
@@ -80,7 +79,11 @@ body{
     }
 
     .cases > div{
-       margin-top: 10rem;
+       margin-top: 13rem;
+    }
+
+    .no-margintop-m{
+        margin-top: 0 !important;
     }
     
     
@@ -138,7 +141,7 @@ p{
     background-color: #F5F5F5;
     padding: 0;
     margin: auto;
-    border: 1px solid #888;
+    border: 0px solid #888;
     width: 90%;
     
   }
@@ -321,7 +324,7 @@ p{
     background-color: #F5F5F5;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    border: 0px solid #888;
     width: 80%;
   }
 
@@ -356,7 +359,7 @@ p{
 .posters{
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
-    height: 88vh;
+    height: 90vh;
     align-content: center;
 }
 
@@ -392,7 +395,7 @@ p{
 }
 
 .wrapper-8 > div {
-    border: lightcoral 1px solid;
+    border: lightcoral 0px solid;
 }
 
 
