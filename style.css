@@ -124,20 +124,20 @@ body{
 
 @font-face {
     font-family: 'Okta Neue Ultralight';
-    src: url(/assets/fonts/Okta\ Neue\ UltraLight.eot)format("eot");
-    src: url(/assets/fonts/Okta\ Neue\ UltraLight.woff2)format("woff2"),
-    url(/assets/fonts/Okta\ Neue\ UltraLight.woff)format("woff"),
-    url(/assets/fonts/Okta\ Neue\ UltraLight.otf)format("opentype"),
-    url(/assets/fonts/Okta\ Neue\ UltraLight.svg)format("svg");
+    src: url(/assets/fonts/Okta\ Neue\ UltraLight.eot);
+    src: url(/assets/fonts/Okta\ Neue\ UltraLight.woff2)format('woff2'),
+    url(/assets/fonts/Okta\ Neue\ UltraLight.woff)format('woff'),
+    url(/assets/fonts/Okta\ Neue\ UltraLight.otf)format('opentype'),
+    url(/assets/fonts/Okta\ Neue\ UltraLight.svg)format('svg');
 }
 
 @font-face {
     font-family: 'Okta Neue SemiBold';
-    src: url(/assets/fonts/Okta\ Neue\ SemiBold.eot)format("eot");
-    src: url(/assets/fonts/Okta\ Neue\ SemiBold.woff2)format("woff2"),
+    src: url(/assets/fonts/Okta\ Neue\ SemiBold.eot);
+    src: url(/assets/fonts/Okta\ Neue\ SemiBold.woff2)format('woff2'),
     url(/assets/fonts/Okta\ Neue\ SemiBold.woff)format("woff"),
-    url(/assets/fonts/Okta\ Neue\ SemiBold.otf)format("opentype"),
-    url(/assets/fonts/Okta\ Neue\ SemiBold.svg)format("svg");
+    url(/assets/fonts/Okta\ Neue\ SemiBold.otf)format('opentype'),
+    url(/assets/fonts/Okta\ Neue\ SemiBold.svg)format('svg');
 }
 
 
