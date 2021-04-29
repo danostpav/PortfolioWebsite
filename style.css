@@ -38,7 +38,7 @@ body{
         text-orientation: mixed;
         writing-mode: vertical-lr;
         position: fixed;
-        top: -3rem;
+        top: 0;
         left: -3rem;
         height: 89vh;
         margin-bottom: 1rem;
@@ -51,7 +51,7 @@ body{
 
    .navigation a h1{
        font-size: 3.5rem;
-       
+       letter-spacing: 0;
    }
 
 
@@ -108,6 +108,7 @@ a{
     text-decoration: underline;
     padding: 0.3rem;
 }
+
 
 p{
     font-family: 'Okta Neue Ultralight';
