@@ -39,7 +39,7 @@ body{
         writing-mode: vertical-lr;
         position: fixed;
         top: 6rem;
-        left: -3rem;
+        left: 2rem;
         height: 89vh;
         margin-bottom: 1rem;
         transform: rotate(-180deg);
@@ -106,7 +106,6 @@ a{
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     text-decoration: underline;
-    padding: 0.3rem;
 }
 
 
