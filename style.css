@@ -34,14 +34,13 @@ body{
     .navigation{
         display: flex;
         justify-content: space-between;
-
         flex-direction: row-reverse;
         text-orientation: mixed;
         writing-mode: vertical-lr;
         position: fixed;
         top: 2rem;
         left: 2rem;
-        height: 90vh;
+        height: 86vh;
         transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
