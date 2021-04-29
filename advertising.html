@@ -13,41 +13,38 @@
 </head>
 
 <body>
-    <div class="wrapper-8">
+    <div class="navigation">
 
         <div></div>
-        <div>
-            <a href="identity.html" style="text-decoration: none;">
-                <h1>Identity</h1>
-            </a>
-        </div>
-        <div>
-            <a href="advertising.html" style="text-decoration: none;">
-                <h1  style="text-decoration: underline;">Advertising</h1>
-            </a>
-        </div>
-        <div>
-            <a href="web.html" style="text-decoration: none;">
-                <h1>WEB</h1>
-            </a>
-        </div>
-        <div>
-            <a href="poster.html" style="text-decoration: none;">
-                <h1>Poster</h1>
-            </a>
-        </div>
-        <div>
-            <a href="infographics.html" style="text-decoration: none;">
-                <h1>Infographics</h1>
-            </a>
-        </div>
+
+        <a href="identity.html" style="text-decoration: none;">
+            <h1>Identity</h1>
+        </a>
+
+        <a href="advertising.html" style="text-decoration: none;">
+            <h1 style="text-decoration: underline;">Advertising</h1>
+        </a>
+
+        <a href="web.html" style="text-decoration: none;">
+            <h1>WEB</h1>
+        </a>
+
+        <a href="poster.html" style="text-decoration: none;">
+            <h1>Poster</h1>
+        </a>
+
+        <a href="infographics.html" style="text-decoration: none;">
+            <h1>Infographics</h1>
+        </a>
         <div></div>
         <div class="reverse">
             <a href="hire.html" style="text-decoration: none;">
                 <h1 class="text-red">Hire</h1>
             </a>
         </div>
+    </div>
 
+    <div class="wrapper-8">
         <div class="blocks">
             <div class="casename">
                 <div>
@@ -58,7 +55,8 @@
             </div>
             <div class="slideshow" id="slide1">
                 <div class="arrow-container"><button class="arrow ar-left"
-                        onclick="plusDivs(this, -1)">&#10094;</button></div>
+                        onclick="plusDivs(this, -1)">&#10094;</button>
+                </div>
                 <div>
                     <img class="slide" src="assets/advertising/r_d/1.jpg" alt="preview">
                     <img class="slide" src="assets/advertising/r_d/2.jpg" alt="preview">
@@ -69,11 +67,9 @@
                     <img class="slide" src="assets/advertising/r_d/7.png" alt="preview">
                     <img class="slide" src="assets/advertising/r_d/8.jpg" alt="preview">
                 </div>
-                <div class="arrow-container"; style="height: 100%; justify-self: end;"><button class="arrow ar-right"
+                <div class="arrow-container" ; style="height: 100%; justify-self: end;"><button class="arrow ar-right"
                         onclick="plusDivs(this, 1)">&#10095;</button></div>
             </div>
-        
-
         </div>
 
         <div class="blocks">
@@ -95,8 +91,6 @@
                 <div style="height: 100%; justify-self: end;"><button class="arrow ar-right"
                         onclick="plusDivs(this, 1)">&#10095;</button></div>
             </div>
-
-
         </div>
 
         <div class="blocks">
@@ -118,26 +112,23 @@
                 <div style="height: 100%; justify-self: end;"><button class="arrow ar-right"
                         onclick="plusDivs(1)">&#10095;</button></div>
             </div>
-        
 
         </div>
 
     </div>
 
-    <div class="hide-m">
-        <div class="me">
-            <figure>
-                <img src="assets/images/me.png" alt="Danylo Ostapchenko">
-                <figcaption>
-                    <h1>Danylo Ostapchenko</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum beatae veritatis odit
-                        minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
-                        necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis laudantium, amet
-                        illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque, iste
-                        dolores harum quibusdam?</p>
-                </figcaption>
-            </figure>
-        </div>
+    <div class="me">
+        <figure>
+            <img src="assets/images/me.png" alt="Danylo Ostapchenko">
+            <figcaption>
+                <h1>Danylo Ostapchenko</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum beatae veritatis odit
+                    minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
+                    necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis laudantium, amet
+                    illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque, iste
+                    dolores harum quibusdam?</p>
+            </figcaption>
+        </figure>
     </div>
 
 
@@ -157,7 +148,7 @@
     </div>
 
     <script>
-       var slideIndex = 1;
+        var slideIndex = 1;
         showDivs(document.getElementById('slide1'), slideIndex);
         showDivs(document.getElementById('slide2'), slideIndex);
         showDivs(document.getElementById('slide3'), slideIndex);
