@@ -52,6 +52,7 @@ body{
    .navigation a h1{
        font-size: 3.5rem;
        letter-spacing: 1px;
+       text-decoration:underline;
    }
    
 
@@ -194,6 +195,7 @@ p{
 }
 
 @media (min-width: 1024px) {
+
     html{
         font-size: calc(10 / 1920 * 100vw);
       
@@ -212,6 +214,21 @@ p{
     .navigation a{
         color: aqua
     }
+
+    
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    opacity: 0.5;
+  }
+  
+  .hide-pc{
+      display: none;
+  }
+
 
   
 
