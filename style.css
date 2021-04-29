@@ -17,7 +17,7 @@ body{
 }
 
 .bg-black {
-    background: #101011;
+    background: #010201;
 }
 
 .bg-white {
@@ -99,7 +99,11 @@ a{
 -ms-user-select: none; /* IE10+/Edge */
 user-select: none; /* Standard */
     }
-
+    
+    .vl {
+        border-left: 0.7rem solid #FF0000;
+        height: 100%;
+      }
 
 .navigation a{
     text-decoration: none;
@@ -108,8 +112,7 @@ user-select: none; /* Standard */
 .navigation a > h1{
    font-size: 3.5rem;
    letter-spacing: 1px;
-   text-decoration: none;
-
+   justify-self: end;
 }
 
 p{
@@ -198,6 +201,11 @@ p{
 
 @media (min-width: 1024px) {
 
+    .vl {
+        border-bottom: 0.5rem solid #FF0000;
+        height: 100%;
+      }
+
     html{
         font-size: calc(10 / 1920 * 100vw);
       
@@ -213,7 +221,9 @@ p{
         margin-top: 1rem;
     }
 
-
+    .navigation div{
+        justify-self: start;
+    }
 
     
 ::-webkit-scrollbar {
@@ -386,6 +396,7 @@ a:hover{
 
 .navigation a{
     text-decoration: none;
+    
 }
 
 }
@@ -475,22 +486,10 @@ a:hover{
 
 
 
-
-.reverse{
-    justify-self: end;
-}
-
 .text-red {
     color: #FF0000;
 }
 
-.text-white {
-    color: #F5F5F5;
-}
-
-.text-black {
-    color:  #101011;
-}
 
 .no-hover{
         pointer-events: none;
@@ -613,8 +612,8 @@ input[type="button"],
 hr {
     border: none;
     height: 0.2rem;
-    color: #FF0000;
-    background-color: #FF0000; 
+    background-color: #010201;
+    margin: 0;
 }
 
 
