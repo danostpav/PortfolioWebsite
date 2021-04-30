@@ -193,6 +193,13 @@ p{
     padding-bottom: 35rem;
 }
 
+.preloaderGif{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+}
+
 
     
     /* END */
@@ -397,10 +404,20 @@ a:hover{
     
 }
 
+.preloaderGif{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 15%;
+}
+
+
 }
 /* } END */
 
-
+body{
+    position: relative;
+}
 
 
 
