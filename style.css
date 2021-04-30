@@ -201,8 +201,18 @@ p{
     width: 20%;
 }
 
-
+.hidden {
+    transition: visibility 0s 0.5s, opacity 0.3s linear;
+    }
     
+    .hire{
+        justify-self: end !important;
+    }
+    
+    
+    .hire a{
+        text-decoration: none !important;
+    }
     /* END */
 }
 
@@ -407,10 +417,29 @@ a:hover{
 
 #bm{
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 40%;
-    width: 15%;
+    width: 10%;
 }
+
+.hidden {
+    transition: visibility 0s 0.3s, opacity 0.2s ease-in-out;
+    }
+
+    .hire{
+        justify-self: end !important;
+        transition: transform .7s ease-in-out;
+        position: absolute; right: calc(100%/11*3); top:1.5rem;
+    }
+    
+    .hire:hover{
+        transform: rotate(2turn);
+    }
+    
+    .hire a{
+        text-decoration: none !important;
+        cursor: crosshair;
+    }
 
 
 }
@@ -658,6 +687,5 @@ transition: opacity 0s linear;
 .hidden {
 visibility: hidden;
 opacity: 0;
-transition: visibility 0s 0.5s, opacity 0.3s linear;
 }
 
