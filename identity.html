@@ -14,8 +14,11 @@
 <body>
 
     <div id="preloader">
-        <img src="preloader.gif" class="visible preloaderGif" alt="">
+        <!-- <img src="preloader.gif" class="visible preloaderGif" alt=""> -->
+        <script class="visible" src="scripts/index.js"></script>
     </div>
+
+    <div id="bm"></div>
 
     <div class="navigation">
         <div class="hide-m"></div>
@@ -340,7 +343,7 @@
         function loadData() {
             return new Promise((resolve, reject) => {
                 window.addEventListener("load", function () {
-                    setTimeout(resolve, 0);
+                    setTimeout(resolve, 1000);
                 });
             })
         }
@@ -353,8 +356,7 @@
             });
     </script>
 
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <script src="scripts/index.js"></script>
 
 </body>
