@@ -2,7 +2,7 @@
 function loadData() {
     return new Promise((resolve, reject) => {
         window.addEventListener("load", function () {
-            setTimeout(resolve, 1000);
+            setTimeout(resolve, 400);
         });
     })
 }
