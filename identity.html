@@ -13,12 +13,12 @@
 
 <body>
 
-    <div id="preloader">
+    <div id="preloader" class="visible">
+        <div id="bm" class="visible"></div>
         <!-- <img src="preloader.gif" class="visible preloaderGif" alt=""> -->
-        <script class="visible" src="scripts/index.js"></script>
     </div>
 
-    <div id="bm"></div>
+    
 
     <div class="navigation">
         <div class="hide-m"></div>
@@ -350,9 +350,12 @@
 
         loadData()
             .then(() => {
+                let preloaderBM = document.getElementById('bm');
                 let preloaderEl = document.getElementById('preloader');
                 preloaderEl.classList.add('hidden');
                 preloaderEl.classList.remove('visible');
+                preloaderBM.classList.add('hidden');
+                preloaderBM.classList.remove('vidible');
             });
     </script>
 

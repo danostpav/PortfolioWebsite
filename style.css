@@ -193,7 +193,8 @@ p{
     padding-bottom: 35rem;
 }
 
-.preloaderGif{
+#bm{
+    width: 50rem;
     position: absolute;
     top: 40%;
     left: 40%;
@@ -404,7 +405,7 @@ a:hover{
     
 }
 
-.preloaderGif{
+#bm{
     position: absolute;
     top: 20%;
     left: 40%;
@@ -660,6 +661,3 @@ opacity: 0;
 transition: visibility 0s 0.5s, opacity 0.3s linear;
 }
 
-#bm{
-    width: 500px;
-}
