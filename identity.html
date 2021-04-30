@@ -8,14 +8,14 @@
     <link rel="styleshhet" href="https://cdnjs.cloudfare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/katacult/favicon.png">
+    </div>
 </head>
 
 <body>
 
-    <div class="preloader">
-        <div class="preloader__image"></div>
-      </div>
-    
+    <div id="preloader" class="visible">
+        <img src="preloader.gif" alt="" style="width: 10%; position: fixed; top:30%; left:50%">
+    </div>
 
     <div class="navigation">
         <div class="hide-m"></div>
@@ -122,7 +122,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -139,7 +140,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -158,7 +160,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -175,7 +178,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -194,7 +198,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -211,7 +216,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -231,7 +237,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -248,7 +255,8 @@
                                 minima, nobis, qui excepturi, expedita nostrum aliquam animi corporis exercitationem
                                 necessitatibus dolorum numquam! Ea distinctio ex ipsa iusto corrupti officiis
                                 laudantium, amet
-                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique atque,
+                                illum quasi reiciendis modi voluptates earum repellendus optio nesciunt similique
+                                atque,
                                 iste
                                 dolores harum quibusdam?</p>
                         </figcaption>
@@ -326,18 +334,27 @@
 
             }
         }
-
-
     </script>
 
-<script>
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 500);
-    }
-  </script>
+    <script>
+        function loadData() {
+            return new Promise((resolve, reject) => {
+                window.addEventListener("load", function () {
+                    setTimeout(resolve, 0);
+                });
+            })
+        }
+
+        loadData()
+            .then(() => {
+                let preloaderEl = document.getElementById('preloader');
+                preloaderEl.classList.add('hidden');
+                preloaderEl.classList.remove('visible');
+            });
+    </script>
+
+
+
+
 
 </body>

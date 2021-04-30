@@ -11,10 +11,10 @@
 
 <body>
 
-    <div class="preloader">
-        <div class="preloader__image"></div>
-      </div>
-    
+    <div id="preloader" class="visible">
+        <img src="preloader.gif" alt="" style="width: 10%; position: fixed; top:30%; left:50%">
+    </div>
+
     <div class="wrapper-3" style="background-color: #FDFDFD; overflow: hidden;">
         <img class="col-3" style="margin-bottom: 100px;" src="assets/cases/kontrabass/1.png" alt="1">
         <div class="col-1">
@@ -89,15 +89,26 @@
         <div class="col-3"><img src="assets/cases/kontrabass/20.png" alt="20"></div>
     </div>
 
+
 </body>
 
 
 <script>
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 500);
+    function loadData() {
+        return new Promise((resolve, reject) => {
+            window.addEventListener("load", function () {
+                setTimeout(resolve, 0);
+            });
+        })
     }
-  </script>
+
+    loadData()
+        .then(() => {
+            let preloaderEl = document.getElementById('preloaderCase');
+            preloaderEl.classList.add('hidden');
+            preloaderEl.classList.remove('visible');
+        });
+</script>
+
+
+</html>
