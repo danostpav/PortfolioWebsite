@@ -465,12 +465,7 @@ body{
     border: none;
 }
 
-.posters{
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    height: 90vh;
-    align-content: center;
-}
+
 
 .slide{
     display:none;
@@ -689,3 +684,12 @@ visibility: hidden;
 opacity: 0;
 }
 
+.posters{
+    margin-top: 6rem;
+      max-height:80vh;
+      transform:rotate(-90deg);
+    }
+
+.posters > div{
+        transform:rotate(90deg);
+    }
