@@ -244,7 +244,7 @@ p{
 
     
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.6rem;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -268,6 +268,9 @@ p{
     grid-auto-flow: row;
     margin-top: 1rem;
 }
+
+
+
 .me{
     width: calc(100% /11 * 2);
     position: absolute;
@@ -481,26 +484,26 @@ body{
 
 }
 
-.slideshow > div {
-    border: #010201 0px solid;
+/* .slideshow > div {
+    border: #010201 1px solid;
 }
 
 .casename > div {
-    border: lightblue 0px solid;
+    border: lightblue 1px solid;
 }
 
 .cases > div{
-    border: lightblue 0px solid;
+    border: lightblue 1px solid;
 }
 
 
 .wrapper-11 > div {
-    border: lightgreen 0px solid;
+    border: lightgreen 1px solid;
 }
 
 .wrapper-8 > div {
-    border: lightcoral 0px solid;
-}
+    border: lightcoral 1px solid;
+} */
 
 
 
@@ -684,12 +687,33 @@ visibility: hidden;
 opacity: 0;
 }
 
-.posters{
-    margin-top: 6rem;
-      max-height:80vh;
-      transform:rotate(-90deg);
-    }
+#box {
+    overflow-y: visible;
+    border-collapse: separate;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+    margin-top: 8rem;
+    margin-left: calc(100%/11 - 3px);
+    border-spacing: 0;
+    transform: rotateX(180deg);
+   
+  }
+  .item {
+    padding-top: 5rem;
+    display: table-cell;
+    min-width: 60rem;
+    transform: rotateX(180deg);
+    
 
-.posters > div{
-        transform:rotate(90deg);
-    }
+  }
+
+  #box::-webkit-scrollbar {
+    height: 0.6rem;
+  }
+
+
+
+  .poster{
+      padding-right: 12rem;
+  }
