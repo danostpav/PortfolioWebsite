@@ -432,7 +432,9 @@ a:hover{
     .hire{
         justify-self: end !important;
         transition: transform .7s ease-in-out;
-        position: absolute; right: calc(100%/11*3); top:1.5rem;
+        position: absolute; right: calc(100%/11*3); top:0.4rem;
+        padding: 1rem;
+        cursor: crosshair;
     }
     
     .hire:hover{
@@ -709,7 +711,7 @@ opacity: 0;
   }
 
   #box::-webkit-scrollbar {
-    height: 0.6rem;
+    height: 0.65rem;
   }
 
 

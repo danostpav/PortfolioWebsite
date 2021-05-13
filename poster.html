@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danylo Ostapchenko</title>
     <link rel="styleshhet" href="https://cdnjs.cloudfare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/jpg" href="assets/katacult/favicon.png">
 
@@ -43,7 +42,7 @@
             </a>
         </div>
         <div></div>
-        <div class="hire hide-pc">
+        <div class="hire hide-pc" >
             <a href="hire.html">
                 <h1 class="text-red">Hire</h1>
             </a>
@@ -113,7 +112,7 @@
     </div>
 
     <script>
-        jQuery(function ($) {
+       /* jQuery(function ($) {
             $.fn.hScroll = function (amount) {
                 amount = amount || 120;
                 $(this).bind("DOMMouseScroll mousewheel", function (event) {
@@ -129,7 +128,13 @@
     
         $(document).ready(function () {
             $('#box').hScroll(60); // You can pass (optionally) scrolling amount
+        });*/
+        const container = document.querySelector("#box");
+        container.addEventListener('wheel', function(event) {
+            container.scrollLeft += event.deltaY;
+            event.preventDefault();
         });
+        
     </script>
 
 
