@@ -88,10 +88,10 @@ a{
     flex-direction: row-reverse;
     writing-mode: vertical-lr;
     position: fixed;
-    top: 4rem;
+    top: 6rem;
+    left: -1.4rem;
     height: 89vh;
     margin-bottom: 1rem;
-    padding: 2rem;
     transform: rotate(-180deg);
     -webkit-user-select: none; /* Safari */        
 -moz-user-select: none; /* Firefox */
@@ -106,6 +106,7 @@ user-select: none; /* Standard */
 
 .navigation a{
     text-decoration: none;
+     padding: 2rem;
 }
 
 .navigation a > h1{
