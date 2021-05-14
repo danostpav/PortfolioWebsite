@@ -44,7 +44,7 @@ body{
     }
     
     .hide-m{
-        display: none;
+        display: none !important;
     }
 
     .cases{
@@ -263,10 +263,13 @@ p{
 .slideshow{
     grid-template-columns: 7fr;
     border: none;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+    border: #010201 0.1rem solid;
+    margin-bottom: 10rem;
 }
 
 .slide{
+    position: relative;
     display:none;
    
 }
@@ -285,35 +288,24 @@ input[type="button"],
     cursor: pointer;
     font-weight: normal;
     border: none;
+    padding: 3rem;
 }
 
-.ar-left{
-    margin-top: 2rem;
-    position: relative;
-    left: -2rem;
-    padding: 2rem 5rem;
-    border: #FF0000 0px solid;
-    z-index: 100;
-}
-
-.ar-right{
-    margin-top: 2rem;
-    position: relative;
-    left: 57vw;
-    padding: 2rem 5rem;
-}
 
 .arrow-container{
-    display: flex;
-    margin-bottom: 10rem;
+    border-top: #010201 0.1rem solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-flow: row;
+    
 }
-
 
 
 .casename{
-    grid-template-columns: 7fr;
-    margin-bottom: 4rem;
-    margin-top: -4rem !important;
+    
+    position: relative;
+    top: -3rem;
+    justify-self: center;
 }
 
 .disable-dbl-tap-zoom {
@@ -445,8 +437,8 @@ p{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
     grid-auto-flow: row;
-    
 }
+
 
 .col-1{
     margin-left: 2rem;
