@@ -88,10 +88,10 @@ a{
     flex-direction: row-reverse;
     writing-mode: vertical-lr;
     position: fixed;
-    top: 6rem;
-    left: 2rem;
+    top: 4rem;
     height: 89vh;
     margin-bottom: 1rem;
+    padding: 2rem;
     transform: rotate(-180deg);
     -webkit-user-select: none; /* Safari */        
 -moz-user-select: none; /* Firefox */
