@@ -42,7 +42,7 @@
             </a>
         </div>
         <div></div>
-        <div class="hire hide-pc" >
+        <div class="hire hide-pc">
             <a href="hire.html">
                 <h1 class="text-red">Hire</h1>
             </a>
@@ -93,7 +93,7 @@
             <img class="poster" src="assets/posters/4.jpg" alt="">
         </div>
 
-       
+
     </div>
 
     <div class="wrapper-11 footer" style="margin-top: 30vh;">
@@ -112,23 +112,23 @@
     </div>
 
     <script>
-       /* jQuery(function ($) {
-            $.fn.hScroll = function (amount) {
-                amount = amount || 120;
-                $(this).bind("DOMMouseScroll mousewheel", function (event) {
-                    var oEvent = event.originalEvent,
-                        direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
-                        position = $(this).scrollLeft();
-                    position += direction > 0 ? -amount : amount;
-                    $(this).scrollLeft(position);
-                    event.preventDefault();
-                })
-            };
-        });
-    
-        $(document).ready(function () {
-            $('#box').hScroll(60); // You can pass (optionally) scrolling amount
-        });*/
+        /* jQuery(function ($) {
+             $.fn.hScroll = function (amount) {
+                 amount = amount || 120;
+                 $(this).bind("DOMMouseScroll mousewheel", function (event) {
+                     var oEvent = event.originalEvent,
+                         direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+                         position = $(this).scrollLeft();
+                     position += direction > 0 ? -amount : amount;
+                     $(this).scrollLeft(position);
+                     event.preventDefault();
+                 })
+             };
+         });
+     
+         $(document).ready(function () {
+             $('#box').hScroll(60); // You can pass (optionally) scrolling amount
+         });*/
 
 
         // const container = document.querySelector("#box");
@@ -137,8 +137,16 @@
         //     event.preventDefault();
         // });
 
-        // sasi jeppy suka
-        
+        const container = document.querySelector("#box");
+        container.addEventListener('wheel', function (event) {
+            let beginScroll = container.scrollLeft;
+            container.scrollLeft += event.deltaY;
+            if (container.scrollLeft != beginScroll) {
+                event.preventDefault();
+            }
+        });
+
+
     </script>
 
 
