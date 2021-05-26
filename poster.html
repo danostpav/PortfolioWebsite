@@ -14,6 +14,12 @@
 
 
 <body>
+
+    
+    <div id="preloader" class="visible">
+        <div id="bm" class="visible"></div>
+    </div>
+
     <div class="navigation">
         <div class="hide-m"></div>
         <div>
@@ -142,7 +148,7 @@
         const container = document.querySelector("#box");
         container.addEventListener('wheel', function (event) {
             let beginScroll = container.scrollLeft;
-            container.scrollLeft += event.deltaY;
+            container.scrollLeft += event.deltaY+1;
             if (container.scrollLeft != beginScroll) {
                 event.preventDefault();
             }
@@ -150,6 +156,10 @@
 
 
     </script>
+
+        <script src="scripts/loadData.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+        <script src="scripts/index.js"></script>
 
 
 </body>
