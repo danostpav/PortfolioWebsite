@@ -307,13 +307,14 @@ input[type="button"],
 .disable-dbl-tap-zoom {
     touch-action: manipulation;
   }
-}
+
 
 
 .footer{
     margin-top: 25rem;
     background-color: #010201;
     height: 20rem;
+  
 }
 
 #bm1{
@@ -332,14 +333,48 @@ input[type="button"],
     height: 1rem;
     background: white;
 }
+.vl2 {
+    border-bottom: 0.7rem solid #010201;
+    height: 100%;
+    overflow:hidden ;
+  }
 
+  
+hr {
+    border: none;
+    height: 0.7rem;
+    background-color: #010201;
+    margin: 0;
+}
+
+.cv{
+    margin-top: 5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 10rem;
+    padding-right: 2rem;
+}
+
+}
 
  /* END */
 
 @media (min-width: 1024px) {
 
+    .cv{
+        margin-top: 15rem !important;
+        padding-bottom: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+
+    .vl2 {
+        border-bottom: 0.4rem solid #010201;
+        height: 100%;
+        overflow:hidden ;
+      }
+
     .vl {
-        border-bottom: 0.5rem solid #FF0000;
+        border-bottom: 0.4rem solid #FF0000;
         height: 100%;
       }
 
@@ -549,7 +584,7 @@ a:hover{
     .hire{
         justify-self: end !important;
         transition: transform .7s ease-in-out;
-        position: absolute; right: calc(100%/11*3); top:0.4rem;
+        position: absolute; right: calc(100%/11*3 - 1rem); top:0.4rem;
         padding: 1rem;
         cursor: crosshair;
     }
@@ -600,12 +635,13 @@ a:hover{
 .blocks{
     grid-column: 2/9;
     margin-top: 15rem;
-    border-bottom: 0.4rem solid black;
+    border-bottom: 0.4rem solid #010201;
     
     padding-bottom: 10rem;
     margin-bottom: 10rem;
 
 }
+
 
 
 
@@ -644,7 +680,6 @@ input[type="button"],
 }
 
 
-}
 
 .casename{
     display: grid;
@@ -660,6 +695,7 @@ input[type="button"],
     background-color: #010201;
     height: 20rem;
     align-items: center;
+   
    
 }
 
@@ -677,6 +713,16 @@ input[type="button"],
     height: 0.6rem;
     background: white;
 }
+
+
+hr {
+    border: none;
+    height: 0.4rem;
+    background-color: #010201;
+    margin: 0;
+}
+}
+
 
 
 /* } END */
@@ -818,13 +864,6 @@ img {
   }
   
 
-hr {
-    border: none;
-    height: 0.2rem;
-    background-color: #010201;
-    margin: 0;
-}
-
 
 .center{
     align-self: center;
@@ -868,4 +907,17 @@ figcaption h1{
 
 #box::-webkit-scrollbar-thumb{
   background: black;
+}
+
+.reverse{
+    display: grid;
+    justify-items: end;
+}
+
+.cv  a{
+    color: red;
+}
+
+.footer > p{
+    color: #F5F5F5;
 }
