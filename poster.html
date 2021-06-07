@@ -138,10 +138,6 @@
 
 
 
-        <div class="item">
-            <img class="poster" src="assets/posters/fall.jpg" alt="">
-        </div>
-        
 
         <div class="item">
             <img class="poster" src="assets/posters/design_art.jpg" alt="">
@@ -165,6 +161,10 @@
         </div>
 
        
+        <div class="item">
+            <img class="poster" src="assets/posters/fall.jpg" alt="">
+        </div>
+        
 
 
 
@@ -193,7 +193,7 @@
         const container = document.querySelector("#box");
         container.addEventListener('wheel', function (event) {
             let beginScroll = container.scrollLeft;
-            container.scrollLeft += event.deltaY;
+            container.scrollLeft += event.deltaY+2;
             if (container.scrollLeft != beginScroll) {
                 event.preventDefault();
             }

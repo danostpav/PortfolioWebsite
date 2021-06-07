@@ -610,7 +610,7 @@ a:hover{
     margin-top: 10rem;
     margin-left: calc(100%/11 - 3px);
     border-spacing: 0;
-    scroll-behavior:auto;
+    scroll-behavior:auto !important;
   }
   .item {
     padding-bottom: 5rem;
