@@ -193,7 +193,7 @@
         const container = document.querySelector("#box");
         container.addEventListener('wheel', function (event) {
             let beginScroll = container.scrollLeft;
-            container.scrollLeft += event.deltaY+1;
+            container.scrollLeft += event.deltaY;
             if (container.scrollLeft != beginScroll) {
                 event.preventDefault();
             }
