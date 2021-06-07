@@ -75,7 +75,7 @@ h1{
 a{
     font-family: 'Okta Neue';
     font-size: 3.5rem;
-    color:  #010201;
+    color:  #FF0000;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     text-decoration: underline;
@@ -313,7 +313,8 @@ input[type="button"],
 .footer{
     margin-top: 25rem;
     background-color: #010201;
-    height: 20rem;
+    padding-bottom: 20rem;
+    
   
 }
 
@@ -324,7 +325,7 @@ input[type="button"],
 .symbol{
     position: absolute;
     right: 5rem;
-    bottom: 22rem;
+    bottom: 1rem;
 
 
 }
@@ -465,7 +466,7 @@ user-select: none; /* Standard */
 a{
     font-family: 'Okta Neue';
     font-size: 2rem;
-    color:  #010201;
+    color:  #FF0000;
     transition: color 0.1 ease-in-out;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
@@ -583,7 +584,7 @@ a:hover{
 
     .hire{
         justify-self: end !important;
-        transition: transform .7s ease-in-out;
+        transition: transform .5s ease-in-out;
         position: absolute; right: calc(100%/11*3 - 1rem); top:0.4rem;
         padding: 1rem;
         cursor: crosshair;
@@ -636,7 +637,6 @@ a:hover{
     grid-column: 2/9;
     margin-top: 15rem;
     border-bottom: 0.4rem solid #010201;
-    
     padding-bottom: 10rem;
     margin-bottom: 10rem;
 
