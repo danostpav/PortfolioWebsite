@@ -134,7 +134,7 @@ p{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 2; 
+    z-index: 200; 
     padding-top: 2rem; 
     left: 0;
     top: 0;
@@ -726,7 +726,22 @@ hr {
     background-color: #010201;
     margin: 0;
 }
+
+
+  .redfilter:hover{
+    opacity: 100;
+  }
+  .preview > img:hover{
+    width: 115%;
 }
+
+a img:hover{
+    width: 115%;
+}
+
+}
+
+
 
 
 
@@ -736,6 +751,10 @@ body{
     position: relative;
 }
 
+.redfilter{
+    opacity: 0;
+    cursor: pointer;
+  }
 
 
 .slide{
@@ -852,14 +871,6 @@ img {
 }
 
 
-  .redfilter{
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .redfilter:hover{
-    opacity: 100;
-  }
 
 .center{
     align-self: center;
@@ -891,9 +902,6 @@ visibility: hidden;
 opacity: 0;
 }
 
-.preview > img:hover{
-    width: 115%;
-}
 
 figcaption h1{
     margin-top: 0rem;
@@ -920,7 +928,6 @@ figcaption h1{
 
 .cv  a{
     font-weight: bold;
-    
 }
 
 
