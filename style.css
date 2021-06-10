@@ -354,11 +354,17 @@ hr {
     padding-right: 2rem;
 }
 
+
 }
 
  /* END */
 
 @media (min-width: 1024px) {
+
+    .cv a:hover{
+        color: #FF0000;
+    }
+    
 
     .cv{
         margin-top: 15rem !important;
@@ -913,9 +919,17 @@ figcaption h1{
 }
 
 .cv  a{
-    color: red;
+    font-weight: bold;
+    
 }
+
 
 .footer > p{
     color: #F5F5F5;
+}
+
+a{
+    color: #010201;
+    text-decoration: underline;
+    text-decoration-color: #FF0000;
 }
