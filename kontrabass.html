@@ -11,8 +11,8 @@
 
 <body>
 
-    <!-- <div id="preloader" class="visible">
-        <div id="bm" class="visible"></div>
+    <!-- <div class="preloader_case" class="visible">
+
     </div> -->
 
 
@@ -93,9 +93,13 @@
 
 </body>
 
+<script>
+    //after window is loaded completely 
+    window.onload = function(){
+        //hide the preloader
+        document.querySelector(".preloader_case").style.display = "none";
+    }
+</script>
 
-<script src="scripts/loadData.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
-<script src="scripts/index.js"></script> -->
 
 </html>
