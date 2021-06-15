@@ -10,18 +10,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body >
+<body>
     <div class="wrapper-3" style="background-color: black; overflow: hidden;">
         <img class="col-3" src="assets/cases/memestream_kpi/1.jpg">
         <img class="col-3" src="assets/cases/memestream_kpi/2.jpg">
         <img class="col-3" src="assets/cases/memestream_kpi/3.jpg">
-        <div class="col-1"></div>
-        <div class="col-1"></div>
-        <video controls width="100%">
-                <source src="assets/cases/memestream_kpi/5.webm" type="video/webm">
-            </video>
+        <img class="col-1-2" src="assets/cases/memestream_kpi/4.jpg">
+        <div class="col-1">
+        <video controls autoplay loop muted width="100%">
+            <source src="assets/cases/memestream_kpi/5.webm" type="video/webm">
+        </video>
+        </div>
+        
+        <img class="col-3" src="assets/cases/memestream_kpi/5.jpg">
+    </div>
+
 
     </div>
     <div></div>
 
+
+    <!-- <script>
+        var videos = document.getElementsByTagName("video");
+
+        function checkScroll() {
+            var fraction = 0.8; // Play when 80% of the player is visible.
+
+            for (var i = 0; i < videos.length; i++) {
+
+                var video = videos[i];
+
+                var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                    b = y + h, //bottom
+                    visibleX, visibleY, visible;
+
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+
+            }
+
+        }
+
+        window.addEventListener('scroll', checkScroll, false);
+        window.addEventListener('resize', checkScroll, false);
+    </script> -->
 </body>

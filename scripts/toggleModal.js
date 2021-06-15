@@ -26,4 +26,8 @@ function toggleModal(event) {
                 }
 
             }
+
+            
         }
+
+         
