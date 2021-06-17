@@ -360,7 +360,7 @@ hr {
     grid-gap: 2rem;
 }
 
-.modal-close{
+.modal-overlay{
   width: 100%;
   display: block;
   z-index: 100000;
