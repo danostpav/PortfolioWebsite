@@ -14,8 +14,8 @@
     <!-- <div class="preloader_case" class="visible">
 
     </div> -->
-
-
+    
+ 
     <div class="wrapper-3" style="background-color: #FDFDFD; overflow: hidden;">
         <img class="col-3" style="margin-bottom: 100px;" src="assets/cases/kontrabass/1.png" alt="1">
         <div class="col-1">
@@ -75,7 +75,7 @@
             <img src="assets/cases/kontrabass/28.png" alt="28">
         </div>
         <div class="col-1">
-            <video  playsinline class="video-background" autoplay loop>
+            <video  playsinline class="video-background" autoplay muted loop >
                 <source src="assets/cases/kontrabass/27.webm" type="video/webm">
             </video>
         </div>
@@ -95,11 +95,14 @@
 
 <script>
     //after window is loaded completely 
-    window.onload = function(){
+    querySelector.onload = function(){
         //hide the preloader
         document.querySelector(".preloader_case").style.display = "none";
     }
 </script>
 
+
+<script>src="scripts/closeModal.js"</script>
+<script>src="scripts/toggleModal.js"</script>
 
 </html>

@@ -12,7 +12,7 @@
 </head>
 
 <body >
-
+   
     <div id="preloader" class="visible">
         <div id="bm" class="visible"></div>
     </div>
@@ -20,7 +20,7 @@
     <div class="navigation">
         <div class="hide-m"></div>
         <div>
-            <a href="identity.html">
+            <a href="index.html">
                 <h1 class="vl">Identity</h1>
             </a>
         </div>
@@ -58,12 +58,15 @@
             <h1 class="text-red">Hire</h1>
         </a>
     </div>
-
+   
+    <img  class="modal-close hide-pc" src="close.svg" onclick=closeModal(event)></div>
     <div class="wrapper-8">
+       
         <div class="blocks" style="border-bottom: 0">
             <div class="cases" style="margin-top: 0;">
                 <div class="no-margintop-m">
                     <figure>
+                
                         <div class="modal-overlay" onclick="closeModal(event)"></div>
                         <div class="preview" onclick="toggleModal(this);">
                             <img src="assets/images/previews/kontrabass.jpg" alt="preview" style="position: relative;">
@@ -90,6 +93,7 @@
 
                 <div>
                     <figure>
+                        <div class="modal-overlay" onclick="closeModal(event)"></div>
                         <div class="preview" onclick="toggleModal(this);">
                             <img src="assets/images/previews/foc.jpg" alt="preview" style="position: relative;">
                             <img class="redfilter" src="redfilter.svg" alt="" style="position: absolute; top: 0rem">
@@ -138,6 +142,7 @@
 
                 <div>
                     <figure>
+                        <div class="modal-overlay" onclick="closeModal(event)"></div>
                         <div class="preview" onclick="toggleModal(this);">
                             <img src="assets/images/previews/boosters.jpg" alt="preview" style="position: relative;">
                             <img class="redfilter" src="redfilter.svg" alt="" style="position: absolute; top: 0rem">
@@ -318,7 +323,7 @@
   <script>
       
     </script>
-
+<script src="scripts/closeModal.js"></script>
    <script src="scripts/toggleModal.js"></script>
    <script src="scripts/loadData.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>

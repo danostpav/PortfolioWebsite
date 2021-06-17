@@ -143,6 +143,7 @@ p{
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
+    
   }
 
   .modal-content {
@@ -359,10 +360,22 @@ hr {
     grid-gap: 2rem;
 }
 
-
-
+.modal-close{
+  width: 100%;
+  display: block;
+  z-index: 100000;
+  position: fixed;
+  width: 90%;
+  grid-column: 3/10;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
 
 }
+
+
+
 
  /* END */
 
@@ -571,6 +584,7 @@ p{
   scrollbar-width: none;  /* Firefox */
 
   }
+
 .modal-overlay {
     display: none; 
     position: fixed;
@@ -1003,3 +1017,6 @@ a{
     text-decoration-color: #FF0000;
 }
 
+.modal::-webkit-scrollbar{
+    display: none;
+}
