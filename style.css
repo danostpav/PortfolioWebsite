@@ -24,7 +24,424 @@ body{
     background: #F5F5F5;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
+  
+    .col-2-3{
+        grid-column: 2/4;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        grid-gap: 2rem;
+    }
+    
+        .cv a:hover{
+            color: #FF0000;
+        }
+        
+    
+        .cv{
+            margin-top: 15rem !important;
+            padding-bottom: 10rem;
+            margin-bottom: 10rem;
+        }
+        
+    
+        .vl2 {
+            border-bottom: 0.4rem solid #010201;
+            height: 100%;
+            overflow:hidden ;
+          }
+    
+        .vl {
+            border-bottom: 0.4rem solid #FF0000;
+            height: 100%;
+          }
+    
+        html{
+            font-size: calc(10 / 1920 * 100vw);
+          
+        }
+    
+        .navigation{
+            width: calc(100% /11 * 11);
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            grid-auto-rows: minmax(1rem, auto);
+            grid-gap: 1rem;
+            grid-auto-flow: row;
+            margin-top: 5rem;
+            width: 130%;
+            position: relative;
+            left: -5rem;
+        }
+    
+        .navigation div{
+            justify-self: start;
+        }
+    
+        
+    ::-webkit-scrollbar {
+        width: 0.6rem;
+      }
+    
+    
+      
+      .hide-pc{
+          display: none;
+      }
+    
+    
+      
+    
+    .wrapper-8{
+        width: calc(100% /11 * 11);
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-gap: 1rem;
+        grid-auto-flow: row;
+        margin-top: 1rem;
+        width: 130%;
+        position: relative;
+        left: -5rem;
+    }
+    
+
+    
+    .cases{
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-auto-rows: minmax(40rem, auto);
+        grid-gap: 1rem;
+        margin-top: 13rem;
+    }
+    
+    
+    h1{
+        font-family: 'Okta Neue';
+        font-size: 3rem;
+        color:  #010201;
+        transition: color 0.1 ease-in-out;
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+        font-weight: bold;
+    }
+    
+    a > h1:hover{
+        color: #FF0000;
+        -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    }
+    
+    a{
+        font-family: 'Okta Neue';
+        font-size: 3rem;
+        color:  #FF0000;
+        transition: color 0.1 ease-in-out;
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+        text-decoration: underline;
+        font-weight: normal;
+    }
+    
+    p{
+        font-family: 'Okta Neue';
+        font-size: 3rem;
+        color:  #010201;
+        transition: color 0.1 ease-in-out;
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+        font-weight: normal;
+    }
+    
+    
+    .wrapper-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-auto-flow: row;
+    }
+    
+    
+    .col-1{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        grid-gap: 2rem;
+    }
+    
+    .col-2-3{
+        grid-column: 2/4;
+    
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        grid-gap: 2rem;
+    
+    }
+    
+    
+    .col-1-2{
+        grid-column: 1/3;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        grid-gap: 2rem;
+    
+    }
+    
+    
+    
+    .col-3{
+        grid-column: 1/4;
+        grid-gap: 0rem 2rem;
+        margin-bottom: -0.8rem;
+    
+    }
+    
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 2; 
+        padding-top: 1rem; 
+        top: 0;
+        width: 140rem;
+        height: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        /*background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); */
+        overflow: auto;
+        -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    
+      }
+    
+    .modal-overlay {
+        display: none; 
+        position: fixed;
+        z-index: 2;
+        padding-top: 2rem;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        overflow: auto;
+    }
+      .modal::-webkit-scrollbar{
+        opacity: 0;
+        display: none;
+      }
+      
+    
+      .modal-content {
+        background-color: #F5F5F5;
+        margin: auto;
+        padding: 0;
+        width: 140rem;
+      }
+    
+      .wrapper-11{
+        width: calc(100% /11 * 11);
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-gap: 1rem;
+        grid-auto-flow: row;
+        margin-top: 10rem;
+    }
+    
+    a:hover{
+        color: #FF0000;
+    }
+    
+    .navigation a{
+        text-decoration: none;
+        
+    }
+    
+    #bm{
+        position: absolute;
+        top: 30%;
+        left: 38%;
+        width: 30%;
+    }
+    
+    .hidden {
+        transition: visibility 0s 0.3s, opacity 0.2s ease-in-out;
+        }
+    
+        .hire{
+            justify-self: end !important;
+            transition: transform .5s ease-in-out;
+            position: absolute; 
+            right: calc(100%/11*3 - 37rem); top:4.5rem;
+            padding: 1rem;
+            cursor: crosshair;
+        }
+        
+        .hire:hover{
+            transform: rotate(2turn);
+        }
+        
+        .hire a{
+            text-decoration: none !important;
+            cursor: crosshair;
+        }
+    
+    
+        
+    #box {
+        overflow-y: visible;
+        border-collapse: separate;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-collapse: collapse;
+        margin-top: 10rem;
+        margin-left: calc(100%/11 - 3px);
+        border-spacing: 0;
+        scroll-behavior:auto !important;
+      }
+      .item {
+        padding-bottom: 5rem;
+        display: table-cell;
+        min-width: 60rem;
+        
+    
+      }
+    
+      #box::-webkit-scrollbar {
+        height: 0.65rem;
+        background: white;
+        
+      }
+    
+    
+    
+      .poster{
+          padding-right: 12rem;
+      }
+    
+      
+    .blocks{
+        grid-column: 2/9;
+        margin-top: 15rem;
+        border-bottom: 0.4rem solid #010201;
+        padding-bottom: 10rem;
+        margin-bottom: 10rem;
+    
+    }
+    
+    
+    
+    
+    .slideshow{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        border: none;
+    }
+    
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    .arrow {
+        background: none;
+        line-height: normal;
+        overflow: visible;
+        height: 100%;
+        font-family: 'Okta Neue';
+        color: #101011;
+        font-size: 5rem;
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+    }
+    
+    .ar-right{
+        padding-left: 13rem;
+    }
+    
+    .ar-left{
+        padding-right: 13rem;
+    }
+    
+    .arrow:hover{
+        color: #FF0000;
+    }
+    
+    
+    
+    .casename{
+        display: grid;
+        grid-template-columns: 7fr;
+        grid-gap: 1rem;
+        margin-bottom: 4rem;
+        justify-items: center;
+    
+    }
+    
+    .footer{
+        margin-top: 25rem;
+        background-color: #010201;
+        height: 20rem;
+        align-items: center;
+       
+       
+    }
+    
+    .symbol{
+        width: 15%;
+        position: absolute;
+        right: 5rem;
+        bottom: 22rem;
+    
+    
+    }
+    
+    
+    #box::-webkit-scrollbar {
+        height: 0.6rem;
+        background: white;
+    }
+    
+    
+    hr {
+        border: none;
+        height: 0.4rem;
+        background-color: #010201;
+        margin: 0;
+    }
+    
+    
+      .redfilter:hover{
+        opacity: 100;
+      }
+      .preview > img:hover{
+        width: 115%;
+    }
+    
+    a img:hover{
+        width: 115%;
+    }
+
+    .me{
+        display: none;
+    }
+    
+    }
+    
+    
+    
+
+
+@media (max-width: 750px) {
 
     html{
         font-size: calc(10 / 1024 * 100vw);
