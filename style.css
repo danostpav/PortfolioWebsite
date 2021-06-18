@@ -360,17 +360,20 @@ hr {
     grid-gap: 2rem;
 }
 
-.modal-overlay{
+.modal-overlay-m{
   width: 100%;
   display: block;
-  z-index: 100000;
+  z-index: 100000000;
   position: fixed;
   width: 90%;
   grid-column: 3/10;
   bottom: 0;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) }
+  transform: translate(-50%, -50%);
+
+}
+ 
 
 }
 
