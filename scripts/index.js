@@ -14,4 +14,4 @@ var animation1 = bodymovin.loadAnimation({
     path: 'scripts/data.json'
 })
 
-screen.orientation.lock();
+screen.orientation.lock(portrait);

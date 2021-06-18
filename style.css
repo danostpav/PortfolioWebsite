@@ -248,15 +248,7 @@ body{
         width: 140rem;
       }
     
-      .wrapper-11{
-        width: calc(100% /11 * 11);
-        display: grid;
-        grid-template-columns: repeat(11, 1fr);
-        grid-auto-rows: minmax(1rem, auto);
-        grid-gap: 1rem;
-        grid-auto-flow: row;
-        margin-top: 10rem;
-    }
+
     
     a:hover{
         color: #FF0000;
@@ -271,7 +263,7 @@ body{
         position: absolute;
         top: 30%;
         left: 38%;
-        width: 30%;
+        width: 20%;
     }
     
     .hidden {
@@ -388,12 +380,23 @@ body{
     }
     
     .footer{
+        width: calc(100% /11 * 11);
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-gap: 1rem;
+        grid-auto-flow: row;
+        margin-top: 10rem;
         margin-top: 25rem;
         background-color: #010201;
         height: 20rem;
         align-items: center;
        
        
+    }
+
+    .footer a{
+        font-size: 2.5rem;
     }
     
     .symbol{
@@ -617,16 +620,6 @@ p{
 
 }
 
-.wrapper-11{
-    display: grid;
-    grid-template-columns: repeat(4, 6fr);
-    grid-auto-rows: minmax(4rem, auto);
-    grid-gap: 5rem;
-    margin-top: 1rem;
-    align-items: center;
-    padding-top: 15rem;
-    padding-bottom: 35rem;
-}
 
 #bm{
     width: 50rem;
@@ -749,11 +742,16 @@ input[type="button"],
 
 
 .footer{
-    margin-top: 25rem;
+    width: calc(100% /11 * 11);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    margin-top: 35rem;
     background-color: #010201;
     padding-bottom: 20rem;
-    
-  
+
 }
 
 #bm1{
@@ -803,6 +801,17 @@ hr {
     grid-gap: 2rem;
 }
 
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 6fr);
+    grid-auto-rows: minmax(4rem, auto);
+    grid-gap: 5rem;
+    margin-top: 35rem;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 13rem;
+}
 
 
 
@@ -1045,15 +1054,6 @@ p{
     width: 140rem;
   }
 
-  .wrapper-11{
-    width: calc(100% /11 * 11);
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-auto-rows: minmax(1rem, auto);
-    grid-gap: 1rem;
-    grid-auto-flow: row;
-    margin-top: 10rem;
-}
 
 a:hover{
     color: #FF0000;
@@ -1184,6 +1184,13 @@ input[type="button"],
 }
 
 .footer{
+    width: calc(100% /11 * 11);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    margin-top: 10rem;
     margin-top: 25rem;
     background-color: #010201;
     height: 20rem;
