@@ -441,7 +441,7 @@ body{
     
 
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
 
     html{
         font-size: calc(10 / 1024 * 100vw);

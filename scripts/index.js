@@ -13,3 +13,5 @@ var animation1 = bodymovin.loadAnimation({
     autoplay: true,
     path: 'scripts/data.json'
 })
+
+screen.orientation.lock();
