@@ -1,4 +1,7 @@
 function toggleModal(event) {
+    // var closer = document.getElementById('close-modal-m');
+    // var navigation = document.getElementById('navigation-clicker');
+    
     if (event.querySelector('.modal').style.display == 'block') {
         return
     }
@@ -26,20 +29,22 @@ function toggleModal(event) {
         /*exit the function:*/
         event.querySelector('.modal').style.display = "block";
         event.parentNode.querySelector('.modal-overlay').style.display = 'block';
-        event.querySelector('.modal-overlay-m').style.display = "block";
+        navigation.style.pointerEvents = "none";
+      
+        
+        
     } else {
         console.log(event)
         if (event.querySelector('.modal').style.display == 'none') {
             event.querySelector('.modal').style.display = 'block';
             event.parentNode.querySelector('.modal-overlay').style.display = 'block';
-            event.querySelector('.modal-overlay-m').style.display = "block";
+            navigation.style.pointerEvents = "none";
         }
-
+        
     }
-
     
-
 }
+
 
 
 
