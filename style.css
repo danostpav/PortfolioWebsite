@@ -1244,6 +1244,7 @@ a img:hover{
 .redfilter{
     opacity: 0;
     cursor: pointer;
+    z-index: 1;
   }
 
 
@@ -1314,6 +1315,7 @@ figure {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
+    z-index: 2;
     
 }
 
