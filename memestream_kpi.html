@@ -10,35 +10,6 @@
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 
-<script>
-    window.my_mute = false;
-
-    $('#my_mute_button').bind('click', function () {
-
-        $('audio,video').each(function () {
-
-            if (!my_mute) {
-
-                if (!$(this).paused) {
-                    $(this).data('muted', true); //Store elements muted by the button.
-                    $(this).pause(); // or .muted=true to keep playing muted
-                }
-
-            } else {
-
-                if ($(this).data('muted')) {
-                    $(this).data('muted', false);
-                    $(this).play(); // or .muted=false
-                }
-
-            }
-        });
-
-        my_mute = !my_mute;
-
-    });
-
-</script>
 
 
 <body style="background-color: black;">
