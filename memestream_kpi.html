@@ -345,7 +345,7 @@
         ad.appendChild(document.importNode(content, true));
     </script>
 
-    <!-- <script>
+    <script>
         var videos = document.getElementsByTagName("video");
 
         function checkScroll() {
@@ -355,6 +355,7 @@
 
 
                 var video = videos[i];
+                video.muted = false;
 
                 var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
                     b = y + h, //bottom
@@ -367,6 +368,7 @@
 
                 if (visible > fraction) {
                     video.play();
+                    video.muted = false;
                 } else {
                     video.pause();
                 }
@@ -387,7 +389,7 @@
 
         window.addEventListener('scroll', checkScroll, false);
         window.addEventListener('resize', checkScroll, false);
-    </script> -->
+    </script>
 
 
 </body>
