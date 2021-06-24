@@ -25,6 +25,21 @@ body{
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
+
+    #mute{
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        border: 1px solid #000;
+        background-size: cover;
+      }
+
+      .video-background{
+          position: relative;
+      }
   
     .col-2-3{
         grid-column: 2/4;
@@ -446,6 +461,20 @@ body{
 
 @media (max-width: 700px) {
 
+    #mute{
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 150px;
+        border: 1px solid red;
+        background-size: cover;
+      }
+
+      .video-background{
+          position: relative;
+      }
+
     html{
         font-size: calc(10 / 1024 * 100vw);
       
@@ -479,6 +508,8 @@ body{
     .no-margintop-m{
         margin-top: 0 !important;
     }
+
+    
     
     
 h1{
@@ -823,6 +854,19 @@ hr {
 
 @media (min-width: 1024px) {
 
+    #mute{
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50px;
+        border: 10px solid red;
+        background-size: cover;
+      }
+
+      .video-background{
+          position: relative;
+      }
 
     
 .col-2-3{
