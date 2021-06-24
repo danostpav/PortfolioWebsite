@@ -26,6 +26,16 @@ body{
 
 @media (min-width: 700px) and (max-width: 1024px) {
 
+    .wrapper-11{
+        width: calc(100% /11 * 11);
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-gap: 1rem;
+        grid-auto-flow: row;
+        margin-top: 10rem;
+    }
+
     #mute{
         cursor: pointer;
         height: 50px;
@@ -221,7 +231,7 @@ body{
     .modal {
         display: none; 
         position: fixed; 
-        z-index: 2; 
+        z-index: 200; 
         padding-top: 1rem; 
         top: 0;
         width: 140rem;
@@ -240,7 +250,7 @@ body{
     .modal-overlay {
         display: none; 
         position: fixed;
-        z-index: 2;
+        z-index: 20;
         padding-top: 2rem;
         top: 0;
         width: 100%;
@@ -591,7 +601,7 @@ p{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 20; 
+    z-index: 200; 
     padding-top: 6rem; 
     top: 0;
     width: 87.5%;
@@ -608,7 +618,7 @@ p{
 .modal-overlay {
     display: none; 
     position: fixed;
-    z-index: 2;
+    z-index: 20;
     padding-top: 6rem;
     top: 0;
     width: 100%;
@@ -851,6 +861,17 @@ hr {
     display:none;
  }
 
+ .wrapper-11{
+    display: grid;
+    grid-template-columns: repeat(4, 6fr);
+    grid-auto-rows: minmax(4rem, auto);
+    grid-gap: 5rem;
+    margin-top: 1rem;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 35rem;
+}
+
 
 
  /* END */
@@ -1058,7 +1079,7 @@ p{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 2; 
+    z-index: 20000000000000000; 
     padding-top: 1rem; 
     top: 0;
     width: 140rem;
@@ -1074,10 +1095,12 @@ p{
 
   }
 
+
+
 .modal-overlay {
     display: none; 
     position: fixed;
-    z-index: 2;
+    z-index: 200;
     padding-top: 2rem;
     top: 0;
     width: 100%;
@@ -1098,6 +1121,7 @@ p{
     margin: auto;
     padding: 0;
     width: 140rem;
+    z-index: 2000;
   }
 
 
@@ -1282,6 +1306,16 @@ a img:hover{
 
 }
 
+.wrapper-11{
+    width: calc(100% /11 * 11);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    margin-top: 10rem;
+}
+
 
 
 
@@ -1362,7 +1396,6 @@ figure {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
-    z-index: 2;
     
 }
 
