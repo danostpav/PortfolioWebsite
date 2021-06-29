@@ -810,6 +810,8 @@ input[type="button"],
     height: 1rem;
     background: white;
 }
+
+
 .vl2 {
     border-bottom: 0.7rem solid #010201;
     height: 100%;
@@ -854,26 +856,21 @@ hr {
 }
 
 
-
-}
-
 .controls[data-state=hidden] {
     display:none;
  }
 
  .wrapper-11{
+    width: calc(100% /11 * 11);
     display: grid;
-    grid-template-columns: repeat(4, 6fr);
-    grid-auto-rows: minmax(4rem, auto);
-    grid-gap: 5rem;
-    margin-top: 1rem;
-    align-items: center;
-    padding-top: 15rem;
-    padding-bottom: 35rem;
+    grid-template-columns: repeat(4, 3fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    margin-top: 10rem;
 }
 
-
-
+}
  /* END */
 
 @media (min-width: 1024px) {
@@ -1304,7 +1301,6 @@ a img:hover{
     width: 115%;
 }
 
-}
 
 .wrapper-11{
     width: calc(100% /11 * 11);
@@ -1315,6 +1311,9 @@ a img:hover{
     grid-auto-flow: row;
     margin-top: 10rem;
 }
+
+}
+
 
 
 
