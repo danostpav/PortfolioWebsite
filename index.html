@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+  
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danylo Ostapchenko</title>
     <link rel="styleshhet" href="https://cdnjs.cloudfare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/jpg" href="assets/katacult/favicon.png">
-    </div>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png">
+    <meta property="og:title" content="Danylo Ostapchenko. Graphic Designer">
+    <meta property="og:image"
+    content="https://danostpav.github.io/PotrfolioWebsite/assets/images/header_og.jpg">
+    <meta property="og:url" content="danylostapchenko.com">
 </head>
 
 <body>
@@ -211,7 +218,16 @@
                 <div class="hide-m"></div>
                 <div>
                     <figure>
+                        <div class="modal-overlay" onclick="closeModal(event)"></div>
+                        <div class="preview" onclick="toggleModal(this);">
                         <img src="assets/images/previews/treambeats.jpg" alt="preview">
+                        <img class="redfilter" src="redfilter.svg" alt="" style="position: absolute; top: 0rem">
+                        <div class="modal">
+                            <div class="modal-content">
+                                <div w3-include-html="trembeats.html"></div>
+                            </div>
+                        </div>
+                    </div>
                         <figcaption>
                             <h1>treambeats.fm</h1>
                             <p>Identity for the first Ukrainian-spoken radio in Germany broadcasting modern Ukrainian
@@ -227,7 +243,16 @@
             <div class="cases">
                 <div>
                     <figure>
-                        <img src="assets/images/previews/memestream_2.jpg" alt="preview">
+                        <div class="modal-overlay" onclick="closeModal(event)"></div>
+                        <div class="preview" onclick="toggleModal(this);">
+                            <img src="assets/images/previews/memestream_2.jpg" alt="preview">
+                            <img class="redfilter" src="redfilter.svg" alt="" style="position: absolute; top: 0rem">
+                            <div class="modal">
+                                <div class="modal-content">
+                                    <div w3-include-html="memestream_2.html"></div>
+                                </div>
+                            </div>
+                        </div>
                         <figcaption>
                             <h1>МЕМСТРИМ 2 (2018)</h1>
                             <p>The only one so the main event about memes. Since 2016 authors trying to explain memes.
@@ -238,10 +263,19 @@
                 </div>
                 <div class="hide-m"></div>
                 <figure>
+                    <div class="modal-overlay" onclick="closeModal(event)"></div>
+                    <div class="preview" onclick="toggleModal(this);">
                     <img src="assets/images/previews/khoryv.jpg" alt="preview">
+                    <img class="redfilter" src="redfilter.svg" alt="" style="position: absolute; top: 0rem">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <div w3-include-html="khoryv.html"></div>
+                        </div>
+                    </div>
+                </div>
                     <figcaption>
                         <h1>ХОРИВ</h1>
-                        <p>The concept of a local Kyiv magazine.<br>Logotype, layout and photography.</p>
+                        <p>The concept of a local Kyiv magazine.<br>Logotype, layout and photography.<br><br>Deisgn School education task.</p>
                     </figcaption>
 
             </div>
